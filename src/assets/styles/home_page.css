@@ -1,0 +1,33 @@
+/* MOBILE FIRST */
+/* Mobile */
+/* -- main */
+/* index.html*/
+main .container section #latest-cars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .container section #latest-cars .car {
+  width: calc(100% / 2 - 15px);
+  margin: 0 7.5px;
+  padding: 20px;
+}
+
+main .container section #latest-cars .car h4 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  border-bottom: 1px solid #ededed;
+}
+
+main .container section #latest-cars .car p {
+  padding-bottom: 5px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /* -- main */
+  /* index.hmtl */
+  main .container section #latest-cars .car {
+    width: calc(100% / 4 - 15px);
+  }
+}

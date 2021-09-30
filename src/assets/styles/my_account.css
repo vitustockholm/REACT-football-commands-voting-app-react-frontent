@@ -1,0 +1,88 @@
+/* MOBILE FIRST */
+/* Mobile */
+/* -- main */
+/* my-account.html */
+main .container #user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .container #user #user__info {
+  padding: 20px 50px;
+
+  text-align: center;
+}
+
+main .container #user #user__info h3 {
+  padding: 7px 0;
+}
+
+main .container #user #user__info button {
+  margin-top: 15px;
+}
+
+main .container #user #user__cars {
+  margin-top: 50px;
+  width: 100%;
+}
+
+main .container #user #user__cars #user__cars-list table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+main .container #user #user__cars #user__cars-list table thead th {
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+main .container #user #user__cars #user__cars-list table tbody tr td {
+  padding: 10px 0;
+}
+
+main
+  .container
+  #user
+  #user__cars
+  #user__cars-list
+  table
+  tbody
+  tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+main .container #user #user__cars #user__cars-add-new {
+  margin-top: 50px;
+  padding: 30px;
+}
+
+main .container #user #user__cars #user__cars-add-new form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  /* -- main */
+  /* my-account.html */
+  main .container #user {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  main .container #user #user__info {
+    width: 25%;
+  }
+
+  main .container #user #user__cars {
+    width: 70%;
+    margin-top: 0;
+  }
+}
